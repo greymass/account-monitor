@@ -1,0 +1,10 @@
+{
+  "accounts": [
+    {
+      "name": "gm",
+      "chain": "EOS",
+      "thresholdBalance": 10,
+      "thresholdRAM": 120 
+    }
+  ]
+}

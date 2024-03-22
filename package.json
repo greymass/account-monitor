@@ -1,0 +1,15 @@
+{
+  "name": "account-monitor",
+  "version": "1.0.0",
+  "description": "A cloudflare worker that allows you to monitor Antelope account balances and ram ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wharfkit/account": "^1.0.1",
+    "@wharfkit/common": "^1.2.0"
+  }
+}
