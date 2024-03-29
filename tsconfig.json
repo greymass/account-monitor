@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "downlevelIteration": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "isolatedModules": true,
+        "lib": ["esnext", "DOM"],
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "strict": true,
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*", "test/**/*", "env.d.ts"],
+}

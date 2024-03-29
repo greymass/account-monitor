@@ -3,8 +3,8 @@
     {
       "name": "gm",
       "chain": "EOS",
-      "thresholdBalance": 10,
-      "thresholdRAM": 120 
+      "thresholdBalance": 100000,
+      "thresholdRAM": 12000000 
     }
   ]
 }
