@@ -17,18 +17,11 @@ interface AccountConfig {
 import * as configJSON from '../../config.json';
 
 // Function to check a single account.
-async function checkAccount({ name, chain, thresholdBalance, thresholdRAM }: AccountConfig): Promise<void> {
-    console.log({ name, chain, thresholdBalance, thresholdRAM })
-    
+async function checkAccount({ name, chain, thresholdBalance, thresholdRAM }: AccountConfig): Promise<void> {    
     const chainDefinition = Chains[chain];
-
-    console.log({chainDefinition})
-    
     const accountKit = new AccountKit(chainDefinition, { client: new APIClient({ fetch: fetch.bind(globalThis), url: chainDefinition.url }) });
-    console.log({ accountKit })
-    const account = await accountKit.load(name);
 
-    console.log({ account })
+    const account = await accountKit.load(name);
 
     let alertMessages: string[] = [];
 
@@ -48,12 +41,10 @@ async function checkAccount({ name, chain, thresholdBalance, thresholdRAM }: Acc
     const ram_usage = account.data.ram_usage
     const ram_available = Number(ram_quota) - Number(ram_usage)
 
-    console.log({ ram_quota, ram_usage, ram_available })
-
     if (!ram_quota || !ram_usage) {
         alertMessages.push(`RAM data not available`);
     } else if (ram_available < thresholdRAM) {
-        alertMessages.push(`LOW RAM: ${ram_available} KB left`);
+        alertMessages.push(`LOW RAM: ${(ram_available / 1024).toFixed(3)} KB left`);
     }
     
     if (alertMessages.length > 0) {
@@ -65,7 +56,6 @@ async function checkAccount({ name, chain, thresholdBalance, thresholdRAM }: Acc
 // This function assumes `fetch` is available globally, e.g., via a polyfill or in an environment like Deno.
 // You might need to import it or use an alternative HTTP client if you're in a Node.js environment.
 async function sendSlackMessage(message: string): Promise<void> {
-    console.log({ fetch, message, url: SLACK_WEBHOOK_URL })
     const resp = await fetch.bind(globalThis)(String(SLACK_WEBHOOK_URL), {
         method: 'POST',
         headers: {
@@ -73,7 +63,6 @@ async function sendSlackMessage(message: string): Promise<void> {
         },
         body: JSON.stringify({ text: message }),
     });
-    console.log({ resp })
 }
 
 // Function to iterate over all accounts in the config and check them.

@@ -3,8 +3,26 @@
     {
       "name": "gm",
       "chain": "EOS",
-      "thresholdBalance": 100000,
-      "thresholdRAM": 12000000 
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "teamgreymass",
+      "chain": "EOS",
+      "thresholdBalance": 100,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "greymassfuel",
+      "chain": "EOS",
+      "thresholdBalance": 100,
+      "thresholdRAM": 300
+    },
+    {
+      "name": "teamgreymass",
+      "chain": "WAX",
+      "thresholdBalance": 100,
+      "thresholdRAM": 10000
     }
   ]
 }

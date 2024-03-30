@@ -7,7 +7,7 @@ compatibility_date = "2024-03-22"
 # Triggers to run the worker on a schedule
 # Adjust the cron timing as needed
 [triggers]
-crons = ["*/1 * * * *"]  # This runs the worker every 15 minutes
+crons = ["*/30 * * * *"]  # This runs the worker every 30 minutes
 
 # If you are using any KV Namespaces, define them here
 # [kv_namespaces]

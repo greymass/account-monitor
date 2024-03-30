@@ -59,10 +59,10 @@ Refer to the `config.json` file for configuring the accounts, chains, and thresh
 {
   "accounts": [
     {
-      "name": "account_name",
+      "name": "teamgreymass",
       "chain": "EOS",
       "thresholdBalance": 10,
-      "thresholdRAM": 120
+      "thresholdRAM": 500
     }
   ],
 }
