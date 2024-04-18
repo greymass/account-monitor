@@ -7,8 +7,32 @@
       "thresholdRAM": 10000
     },
     {
+      "name": "gm",
+      "chain": "WAX",
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "gm",
+      "chain": "Telos",
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
       "name": "teamgreymass",
       "chain": "EOS",
+      "thresholdBalance": 100,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "teamgreymass",
+      "chain": "WAX",
+      "thresholdBalance": 100,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "teamgreymass",
+      "chain": "Telos",
       "thresholdBalance": 100,
       "thresholdRAM": 10000
     },
@@ -19,9 +43,39 @@
       "thresholdRAM": 300
     },
     {
-      "name": "teamgreymass",
+      "name": "greymassfuel",
       "chain": "WAX",
       "thresholdBalance": 100,
+      "thresholdRAM": 300
+    },
+    {
+      "name": "greymassfuel",
+      "chain": "Telos",
+      "thresholdBalance": 100,
+      "thresholdRAM": 300
+    },
+    {
+      "name": "fuel.gm",
+      "chain": "EOS",
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "fuel.gm",
+      "chain": "WAX",
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "fuel.gm",
+      "chain": "Telos",
+      "thresholdBalance": 50,
+      "thresholdRAM": 10000
+    },
+    {
+      "name": "rentals.gm",
+      "chain": "EOS",
+      "thresholdBalance": 50,
       "thresholdRAM": 10000
     }
   ]
