@@ -33,7 +33,7 @@
     {
       "name": "teamgreymass",
       "chain": "Telos",
-      "thresholdBalance": 100,
+      "thresholdBalance": 10,
       "thresholdRAM": 10000
     },
     {
@@ -70,7 +70,7 @@
       "name": "fuel.gm",
       "chain": "Telos",
       "thresholdBalance": 50,
-      "thresholdRAM": 10000
+      "thresholdRAM": 5000
     },
     {
       "name": "rentals.gm",

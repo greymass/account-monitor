@@ -32,7 +32,7 @@ async function checkAccount({ name, chain, thresholdBalance, thresholdRAM }: Acc
     const balance = account.data.core_liquid_balance
 
     if (!balance) {
-        alertMessages.push(`Balance data not available`);
+        alertMessages.push(`Balance data not available.`);
     } else if (balance.value < thresholdBalance) {
         alertMessages.push(`LOW BALANCE: ${balance}`);
     }
