@@ -77,6 +77,18 @@
       "chain": "EOS",
       "thresholdBalance": 50,
       "thresholdRAM": 10000
+    },
+    {
+      "name": "apc.shipload",
+      "chain": "EOS",
+      "thresholdBalance": 0,
+      "thresholdRAM": 100000
+    },
+    {
+      "name": "agc.shipload",
+      "chain": "EOS",
+      "thresholdBalance": 0,
+      "thresholdRAM": 100000
     }
   ]
 }
